@@ -64,7 +64,10 @@ elif scenario == 5:
     n_points    = 100*4*2
     f   = lambda x: np.exp(-x**2/2) * np.cos(10*x)
 n_frames    = round(2*np.pi/dt_plot * 4)
-#fname_plot  = ''
+
+# comment following line to save into files, using filenames as defined
+# in case structure above
+fname_plot  = ''
 
 # create x and y data
 # note that for the case of very different frequencies, you might want to increase n_points
